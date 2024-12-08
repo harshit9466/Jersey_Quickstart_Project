@@ -55,9 +55,23 @@ public class RemoveDuplicatesFromSortedArray {
         // Loop through the array starting from the second element
         for (int i = 1; i < nums.length; i++) {
             // If the current element is different from the last unique element
+        	
+//            // Print the updated nums array
+//            for (int k = 0; k < nums.length; k++) {
+//                System.out.print(nums[k] + " ");
+//            }
+//            System.out.println("\n");
+            
             if (nums[i] != nums[j]) {
                 j++;  // Move the unique position pointer forward
                 nums[j] = nums[i]; // Update the unique position with the new unique element
+                
+//              // Print the updated nums array
+//                for (int l = 0; l < nums.length; l++) {
+//                    System.out.print(nums[l] + " ");
+//                }
+//                System.out.println("\n");
+                
             }
         }
 
