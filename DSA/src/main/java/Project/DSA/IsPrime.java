@@ -12,7 +12,7 @@ public class IsPrime {
                 try {
                     System.out.println("Enter a number to check if it's prime:");
                     int n = Integer.parseInt(read.readLine()); // Read the number to check primality
-                    Solution ob = new Solution();
+                    IsPrimeSolution ob = new IsPrimeSolution();
                     
                     if (ob.isPrime(n)) {
                         System.out.println("true"); // If the number is prime, print "true"
@@ -32,7 +32,7 @@ public class IsPrime {
     }
 }
 
-class Solution {
+class IsPrimeSolution {
     static boolean isPrime(int n) {
         if (n <= 1) {
             return false; // 0 and 1 are not prime numbers
