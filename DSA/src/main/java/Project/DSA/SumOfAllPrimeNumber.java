@@ -9,14 +9,14 @@ class SumOfAllPrimeNumber
     	{
 			if(IsPrimeSolution.isPrime(i))
 			{
-//				System.out.println("i:"+i);
+//				System.out.println("i:"+i); 
 				result += i;
 			}
 		}
     	return result;
-    }
+    }  
     
-    //Optimal
+    //Optimal̥
     public static long prime_Sum_Optimal(int n)
     {
         boolean[] isPrime = new boolean[n + 1];
