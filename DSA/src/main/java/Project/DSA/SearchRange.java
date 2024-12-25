@@ -16,18 +16,20 @@ class SearchRange
 		int start = 0, end = nums.length - 1;
 		int first = -1;
 
-		while (start <= end)
+		while(start <= end)
 		{
 			int mid = start + (end - start) / 2;
 
-			if (nums[mid] == target)
+			if(nums[mid] == target)
 			{
 				first = mid;
 				end = mid - 1; // Keep searching in the left half
-			} else if (nums[mid] < target)
+			}
+			else if(nums[mid] < target)
 			{
 				start = mid + 1;
-			} else
+			}
+			else
 			{
 				end = mid - 1;
 			}
@@ -41,18 +43,20 @@ class SearchRange
 		int start = 0, end = nums.length - 1;
 		int last = -1;
 
-		while (start <= end)
+		while(start <= end)
 		{
 			int mid = start + (end - start) / 2;
 
-			if (nums[mid] == target)
+			if(nums[mid] == target)
 			{
 				last = mid;
 				start = mid + 1; // Keep searching in the right half
-			} else if (nums[mid] < target)
+			}
+			else if(nums[mid] < target)
 			{
 				start = mid + 1;
-			} else
+			}
+			else
 			{
 				end = mid - 1;
 			}
@@ -67,11 +71,11 @@ class SearchRange
 		int firstOccurance = -1;
 		int lastOccurance = -1;
 
-		for (int i = 0; i < nums.length; i++)
+		for(int i = 0; i < nums.length; i++)
 		{
-			if (nums[i] == target)
+			if(nums[i] == target)
 			{
-				if (firstOccurance == -1)
+				if(firstOccurance == -1)
 				{
 					firstOccurance = i;
 				}
